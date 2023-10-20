@@ -435,8 +435,9 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #ff5e99;
-  background-image: var(--gradient-brand);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to left, #00000000, #171717), url("assets/images/hl2.webp");
+  background-size: contain;
   transition: 450ms var(--easing);
   z-index: 3;
 }
