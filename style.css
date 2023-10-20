@@ -543,6 +543,36 @@ body.light .header {
 }
 
 /* --------------------------------- */
+/* ----------- About me ------------ */
+/* --------------------------------- */
+
+.about-area {
+  padding-block-start: var(--gutter-x-large);
+  border: 5px solid;
+  border-color: #989898;
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  grid-gap: 20px; 
+}
+
+.about-text {
+  border: 2px solid;
+  border-color: yellow;
+}
+
+.about-picture {
+  border: 2px solid;
+  border-color: yellowgreen;
+}
+
+#profilePicture{
+  display: block;
+  margin: auto;
+  max-height: auto;
+  max-width: 60%;
+}
+
+/* --------------------------------- */
 /* ----- Clients -----*/
 /* --------------------------------- */
 
