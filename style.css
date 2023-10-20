@@ -437,6 +437,7 @@ main {
   width: 100%;
   background-repeat: no-repeat;
   background-image: linear-gradient(to left, #00000000, #171717), url("assets/images/hl2.webp");
+  background-size: cover;
   transition: 450ms var(--easing);
   z-index: 3;
 }
