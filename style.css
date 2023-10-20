@@ -548,28 +548,33 @@ body.light .header {
 
 .about-area {
   padding-block-start: var(--gutter-x-large);
-  border: 5px solid;
-  border-color: #989898;
-  display: grid;
-  grid-template-columns: 1fr 0.55fr;
-  grid-gap: 20px; 
+  display: flex;
+  gap: 2%
 }
 
 .about-text {
-  border: 2px solid;
-  border-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
 }
 
 .about-picture {
-  border: 2px solid;
-  border-color: yellowgreen;
+  display: flex;
+  justify-content: center;
 }
 
 #profilePicture{
   display: block;
   margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   max-height: auto;
-  max-width: 60%;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: var(--important);
 }
 
 /* --------------------------------- */
