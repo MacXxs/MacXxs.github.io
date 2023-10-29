@@ -266,7 +266,7 @@ h3,
 }
 
 /* --------------------------------- */
-/* ----- Components -----*/
+/* ---------- Components ----------- */
 /* --------------------------------- */
 
 .btn {
@@ -367,8 +367,12 @@ body.light .link::after {
   transform: scaleX(1);
 }
 
+.divider {
+  border-color: #fa8e005b;
+}
+
 /* --------------------------------- */
-/* ----- Layout -----*/
+/* ------------ Layout ------------- */
 /* --------------------------------- */
 
 section:not(:first-child) {
@@ -401,7 +405,7 @@ main {
 }
 
 /* --------------------------------- */
-/* ----- Menu Button -----*/
+/* ---------- Menu Button ---------- */
 /* --------------------------------- */
 
 .menu-btn-container {
@@ -432,7 +436,7 @@ main {
 }
 
 /* --------------------------------- */
-/* ----- Navigation -----*/
+/* ----------- Navigation ---------- */
 /* --------------------------------- */
 
 .nav {
@@ -482,7 +486,7 @@ main {
 }
 
 /* --------------------------------- */
-/* ----- Header -----*/
+/* ------------ Header ------------- */
 /* --------------------------------- */
 
 .header {
@@ -593,13 +597,14 @@ body.light .header {
 }
 
 .project-card {
-  padding: 1%;
+  padding: 1.5%;
   border-radius: 5%/15%;
   background-color: var(--card-background);
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px 1px rgba(255, 145, 0, 0.316);
 }
 
 .project-card .date{
@@ -612,10 +617,49 @@ body.light .header {
 
 .project-card .uni {
   color: var(--card-uni);
+  font-size: 16px;
 }
 
 .project-card .location {
   color: var(--card-location);
+  font-size: 16px;
+}
+
+/* --------------------------------- */
+/* ---------- Employment ----------- */
+/* --------------------------------- */
+.employment-area {
+  padding-block-start: var(--gutter-x-large);
+  display: flex;
+  flex-direction: column;
+}
+
+.employment-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5%;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.employment-container .project-card {
+  width: 50%;
+}
+
+.employment-container .project-card :not(:first-child) {
+  margin-top: 2.5%;
+}
+
+.employment-container:not(:first-child) {
+  margin-top: 4%;
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* --------------------------------- */
@@ -945,7 +989,7 @@ body.dark .work-links img {
   block-size: var(--gutter-nano);
   inline-size: var(--gutter-nano);
   border-radius: 50%;
-  background-color: red;
+  background-color: green;
   animation: blink 550ms alternate infinite var(--easing);
 }
 
