@@ -265,6 +265,19 @@ h3,
   color: lightgrey;
 }
 
+/* Typewritter text */
+.header-text span {
+  border-right: 0.15em solid;
+  margin-left: 1px;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* --------------------------------- */
 /* ---------- Components ----------- */
 /* --------------------------------- */
@@ -424,7 +437,7 @@ main {
   padding-block: var(--gutter-nano);
   border-radius: var(--gutter-large);
   text-decoration: none;
-  background-color: var(--bg-color-secondary);
+  background-color: var(--bg-color-primary);
   color: var(--important);
   cursor: pointer;
 }
@@ -433,6 +446,22 @@ main {
 .nav-items a {
   font-stretch: 125%;
   font-weight: 900;
+}
+
+.menu-btn:hover {
+  background-color: var(--bg-color-secondary);
+}
+
+/* Go to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  margin-top: 23px;
+  inline-size: 50px;
+  background-color: var(--bg-color-primary); /* Set a background color */
+}
+
+#myBtn:hover {
+  background-color: var(--bg-color-secondary); /* Add a dark-grey background on hover */
 }
 
 /* --------------------------------- */
@@ -810,6 +839,7 @@ body.light .work-img {
 .work-technologies {
   list-style-position: inside;
   list-style-type: disc;
+  column-count: 2;
   margin-block-end: var(--gutter-x-small);
 }
 

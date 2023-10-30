@@ -74,6 +74,7 @@
       <div class="menu-btn-container">
         <div class="container">
           <button type="button" class="menu-btn">menu</button>
+          <button type="button" class="menu-btn" onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
         </div>
       </div>
 
@@ -85,9 +86,11 @@
           <li class="nav-item"><a href="#experience">Experience</a></li>
           <li class="nav-item"><a href="#work">Projects</a></li>
           <li class="nav-item"><a href="#skills">Skills</a></li>
+          <!--
           <li class="nav-item">
             <a href="#contact" data-focused="last-focused">Contact</a>
           </li>
+          -->
         </ol>
       </nav>
 
@@ -99,12 +102,12 @@
           </h1>
 
           <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text" style="color: rgb(235, 235, 235);">
+          <p class="header-text" id="titleDesc" style="color: rgb(235, 235, 235);">
             Graphics & Engine programmer, Computer scientist
           </p>
 
           <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#about" class="btn btn-cta">About me</a>
             <a href="#work" class="btn btn-secondary">See my work</a>
           </div>
         </div>
@@ -214,7 +217,8 @@
               <p>
                 For as long as I can remember, I've been fascinated by video games, their ability to tell stories, and their beautiful visuals.<br>
                 These were the main reasons for me to study computer science, so I could then have all the coding knowledge and experience 
-                needed to enroll in a game programming master and, hopefully, start my career in the industry.
+                needed to enroll in a game programming master and, hopefully, start my career in the industry following my passion for computer 
+                graphics and programming in general.
               </p>
               <br>
               <p style="text-align: center;"><b>And so I did!</b></p>
@@ -433,7 +437,7 @@
               <picture class="work-img">
                 <img
                   loading="lazy"
-                  src="assets/images/engine/engine_toxic.png"
+                  src="assets/images/game/mainMenu.webp"
                   alt="agency elevation"
                 />
               </picture>
@@ -461,13 +465,13 @@
           </div>
         </div>
       </section>
-
+      
+      <!--
       <section class="contact">
         <div class="container">
           <h2 class="h2" id="contact">Send Message</h2>
           <div class="contact-content">
             <div class="contact-textbox">
-              <!-- Please comment this component if you're not available for hire -->
               <strong href="#" class="hire-alert">
                 <span class="indicator"></span>
                 Available for hire
@@ -483,7 +487,6 @@
                 to the engine, taking always into account perfomance in all stages of the development,
                 making sure that everything works smoothly as possible always.
               </p>
-              <!-- Replace src with your signatures and name -->
               <img
                 src="assets/images/signatures.png"
                 alt="Miquel Prieto Moliné"
@@ -515,6 +518,7 @@
           </div>
         </div>
       </section>
+      -->
     </main>
 
     <footer class="footer">
@@ -532,14 +536,6 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Codepen" href="https://github.com/macxxs" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/codepen.svg"
-                    alt="Codepen"
-                /></a>
-              </li>
-              <li class="footer-link">
                 <a title="Linkedin" href="https://www.linkedin.com/in/miquel-prieto-moline" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
@@ -547,10 +543,26 @@
                     alt="Linkedin"
                 /></a>
               </li>
+              <li class="footer-link">
+                <a title="Gmail" href="mailto:mikipmoline@gmail.com" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/mail.svg"
+                    alt="Gmail"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Curriculum Vitae" href="assets/CV_MiquelPrieto.pdf" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/cv.svg"
+                    alt="CV"
+                /></a>
+              </li>
             </ol>
           </nav>
           <p class="footer-text">
-            &copy; 2024 - This is a footer text</a>
+            &copy; 2024 - Miquel Prieto Moliné</a>
           </p>
           <label class="theme-switch" for="theme-switch">
             <span>Dark Theme</span>
