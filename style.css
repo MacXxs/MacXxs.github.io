@@ -514,6 +514,29 @@ main {
   transform: scale(1);
 }
 
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color-primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--important);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc400;
+}
+
 /* --------------------------------- */
 /* ------------ Header ------------- */
 /* --------------------------------- */
