@@ -714,7 +714,7 @@ body.light .header {
   .project-card {
     justify-content: center;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .project-card:not(:first-child) {
@@ -757,6 +757,26 @@ body.light .header {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+}
+
+@media (max-width: 845px) {
+  .employment-container {
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+
+  .employment-container:not(:first-child) {
+    margin-top: 5%;
+  }
+
+  .employment-container .project-card {
+    width: 100%;
+  }
+
+  .card-desc {
+    margin-top: 3%;
+    list-style: inside;
+  }
 }
 
 /* --------------------------------- */
