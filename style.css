@@ -57,6 +57,10 @@ body.dark {
   --border-dark: #c0c0c02f;
   --gradient-border: linear-gradient(to left bottom, #777, #0e0d0d);
   --shadow: 0 1rem 1rem #00000040;
+  --card-background: #181717; 
+  --card-title: #ffffffdc;
+  --card-uni: #ffffffb6;
+  --card-location: #ff990076;
 }
 
 body.light {
@@ -261,8 +265,21 @@ h3,
   color: lightgrey;
 }
 
+/* Typewritter text */
+.header-text span {
+  border-right: 0.15em solid;
+  margin-left: 1px;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* --------------------------------- */
-/* ----- Components -----*/
+/* ---------- Components ----------- */
 /* --------------------------------- */
 
 .btn {
@@ -363,8 +380,12 @@ body.light .link::after {
   transform: scaleX(1);
 }
 
+.divider {
+  border-color: #fa8e005b;
+}
+
 /* --------------------------------- */
-/* ----- Layout -----*/
+/* ------------ Layout ------------- */
 /* --------------------------------- */
 
 section:not(:first-child) {
@@ -397,7 +418,7 @@ main {
 }
 
 /* --------------------------------- */
-/* ----- Menu Button -----*/
+/* ---------- Menu Button ---------- */
 /* --------------------------------- */
 
 .menu-btn-container {
@@ -416,7 +437,7 @@ main {
   padding-block: var(--gutter-nano);
   border-radius: var(--gutter-large);
   text-decoration: none;
-  background-color: var(--bg-color-secondary);
+  background-color: var(--bg-color-primary);
   color: var(--important);
   cursor: pointer;
 }
@@ -427,8 +448,24 @@ main {
   font-weight: 900;
 }
 
+.menu-btn:hover {
+  background-color: var(--bg-color-secondary);
+}
+
+/* Go to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  margin-top: 23px;
+  inline-size: 50px;
+  background-color: var(--bg-color-primary); /* Set a background color */
+}
+
+#myBtn:hover {
+  background-color: var(--bg-color-secondary); /* Add a dark-grey background on hover */
+}
+
 /* --------------------------------- */
-/* ----- Navigation -----*/
+/* ----------- Navigation ---------- */
 /* --------------------------------- */
 
 .nav {
@@ -477,8 +514,31 @@ main {
   transform: scale(1);
 }
 
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color-primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--important);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc400;
+}
+
 /* --------------------------------- */
-/* ----- Header -----*/
+/* ------------ Header ------------- */
 /* --------------------------------- */
 
 .header {
@@ -576,6 +636,82 @@ body.light .header {
   border-radius: 50%;
   border: 2px solid;
   border-color: var(--important);
+}
+
+/* --------------------------------- */
+/* ----------- Studies ------------- */
+/* --------------------------------- */
+.studies-area {
+  padding-block-start: var(--gutter-x-large);
+  display: flex;
+  flex-direction: row;
+  gap: 2%
+}
+
+.project-card {
+  padding: 1.5%;
+  border-radius: 5%/15%;
+  background-color: var(--card-background);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px 1px rgba(255, 145, 0, 0.316);
+}
+
+.project-card .date{
+  color: var(--important);
+}
+
+.project-card .title{
+  color: var(--card-title);
+}
+
+.project-card .uni {
+  color: var(--card-uni);
+  font-size: 16px;
+}
+
+.project-card .location {
+  color: var(--card-location);
+  font-size: 16px;
+}
+
+/* --------------------------------- */
+/* ---------- Employment ----------- */
+/* --------------------------------- */
+.employment-area {
+  padding-block-start: var(--gutter-x-large);
+  display: flex;
+  flex-direction: column;
+}
+
+.employment-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5%;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.employment-container .project-card {
+  width: 50%;
+}
+
+.employment-container .project-card :not(:first-child) {
+  margin-top: 2.5%;
+}
+
+.employment-container:not(:first-child) {
+  margin-top: 4%;
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* --------------------------------- */
@@ -726,6 +862,7 @@ body.light .work-img {
 .work-technologies {
   list-style-position: inside;
   list-style-type: disc;
+  column-count: 2;
   margin-block-end: var(--gutter-x-small);
 }
 
@@ -905,7 +1042,7 @@ body.dark .work-links img {
   block-size: var(--gutter-nano);
   inline-size: var(--gutter-nano);
   border-radius: 50%;
-  background-color: red;
+  background-color: green;
   animation: blink 550ms alternate infinite var(--easing);
 }
 
