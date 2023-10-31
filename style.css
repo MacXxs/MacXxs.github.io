@@ -638,7 +638,7 @@ body.light .header {
   border-color: var(--important);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1045px) {
   .about-area {
     flex-direction: column-reverse;
   }
