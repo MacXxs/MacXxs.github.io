@@ -61,6 +61,8 @@ body.dark {
   --card-title: #ffffffdc;
   --card-uni: #ffffffb6;
   --card-location: #ff990076;
+  --title-color: #ffffff;
+  --box-shadow: #ff910051
 }
 
 body.light {
@@ -73,6 +75,8 @@ body.light {
   --border-dark: #5e5e5e1f;
   --gradient-border: linear-gradient(to left bottom, #000000c6, #0e0d0d00);
   --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  --title-color: #000000;
+  --box-shadow: #ff910051
 }
 
 *,
@@ -556,8 +560,8 @@ body.dark .header {
 }
 
 body.light .header {
-  background-image: linear-gradient(#ffffffa2, #ffffffe6),
-    url("assets/images/hero-bg-light.webp");
+  background-image: linear-gradient(#ffffff9c, #ffffff00,#ffffff9c),
+    url("assets/images/me_bg.webp");
 }
 
 .header-textbox {
@@ -566,12 +570,17 @@ body.light .header {
   transform: translateY(-50%);
 }
 
+.header-title {
+  color: var(--title-color);
+}
+
 .header-text {
   font-size: var(--text-large);
   font-weight: 400;
   max-inline-size: 745px;
   margin-block-start: var(--gutter-micro);
   margin-block-end: var(--gutter-medium);
+  color: var(--title-color);
 }
 
 @media (max-width: 1200px) {
@@ -684,7 +693,7 @@ body.light .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 0px 10px 1px rgba(255, 145, 0, 0.316);
+  box-shadow: 0px 0px 10px 1px var(--box-shadow);
 }
 
 .project-card .date{
