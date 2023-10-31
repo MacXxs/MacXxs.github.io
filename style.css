@@ -61,18 +61,24 @@ body.dark {
   --card-title: #ffffffdc;
   --card-uni: #ffffffb6;
   --card-location: #ff990076;
+  --title-color: #ffffff;
+  --box-shadow: #Ff910051;
+  --scrollbar-secondary: #ffc400;
 }
 
 body.light {
   --bg-color-primary: #fbfbfb;
   --bg-color-secondary: #ffffff;
-  --important: #000;
+  --important: #c51c24;
   --sub: #111;
   --body: #585b63;
   --border: #62626234;
   --border-dark: #5e5e5e1f;
   --gradient-border: linear-gradient(to left bottom, #000000c6, #0e0d0d00);
-  --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  --shadow: 0 1rem 1rem rgba(171, 58, 58, 0.227);
+  --title-color: rgb(0, 0, 0);
+  --box-shadow: #b1292951;
+  --scrollbar-secondary: #1a1a1abd;
 }
 
 *,
@@ -290,7 +296,26 @@ h3,
   padding: 18px 60px;
   border-radius: var(--gutter-nano);
   transition: 0.3s all ease-in-out;
-  cursor: pointer;
+}
+
+body.light .btn{
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .btn{
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
+body.light .btn:hover {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .btn:hover {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
 }
 
 @media (max-width: 700px) {
@@ -318,7 +343,7 @@ body.dark .btn-cta:focus {
 
 body.light .btn-cta:hover,
 body.light .btn-cta:focus {
-  box-shadow: #07070733 0 0 0 var(--gutter-nano);
+  box-shadow: #c73f3f33 0 0 0 var(--gutter-nano);
 }
 
 .btn-secondary {
@@ -381,7 +406,110 @@ body.light .link::after {
 }
 
 .divider {
-  border-color: #fa8e005b;
+  border-color: var(--box-shadow);
+}
+
+body.light {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
+
+/* Cursor animations */
+
+@-webkit-keyframes cursor-light {
+  0% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+  5% {cursor: url("assets/images/cursor/light/cursor_light_f1.png") 16 16, auto;}
+  10% {cursor: url("assets/images/cursor/light/cursor_light_f2.png") 16 16, auto;}
+  15% {cursor: url("assets/images/cursor/light/cursor_light_f3.png") 16 16, auto;}
+  20% {cursor: url("assets/images/cursor/light/cursor_light_f4.png") 16 16, auto;}
+  25% {cursor: url("assets/images/cursor/light/cursor_light_f5.png") 16 16, auto;}
+  30% {cursor: url("assets/images/cursor/light/cursor_light_f6.png") 16 16, auto;}
+  35% {cursor: url("assets/images/cursor/light/cursor_light_f7.png") 16 16, auto;}
+  40% {cursor: url("assets/images/cursor/light/cursor_light_f8.png") 16 16, auto;}
+  45% {cursor: url("assets/images/cursor/light/cursor_light_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/light/cursor_light_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/light/cursor_light_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/light/cursor_light_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/light/cursor_light_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/light/cursor_light_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/light/cursor_light_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/light/cursor_light_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/light/cursor_light_f18.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/light/cursor_light_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+} 
+
+@keyframes cursor-light {
+  0% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+  5% {cursor: url("assets/images/cursor/light/cursor_light_f1.png") 16 16, auto;}
+  10% {cursor: url("assets/images/cursor/light/cursor_light_f2.png") 16 16, auto;}
+  15% {cursor: url("assets/images/cursor/light/cursor_light_f3.png") 16 16, auto;}
+  20% {cursor: url("assets/images/cursor/light/cursor_light_f4.png") 16 16, auto;}
+  25% {cursor: url("assets/images/cursor/light/cursor_light_f5.png") 16 16, auto;}
+  30% {cursor: url("assets/images/cursor/light/cursor_light_f6.png") 16 16, auto;}
+  35% {cursor: url("assets/images/cursor/light/cursor_light_f7.png") 16 16, auto;}
+  40% {cursor: url("assets/images/cursor/light/cursor_light_f8.png") 16 16, auto;}
+  45% {cursor: url("assets/images/cursor/light/cursor_light_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/light/cursor_light_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/light/cursor_light_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/light/cursor_light_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/light/cursor_light_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/light/cursor_light_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/light/cursor_light_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/light/cursor_light_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/light/cursor_light_f18.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/light/cursor_light_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+}
+
+@-webkit-keyframes cursor-dark {
+  0% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
+  5% {cursor: url("assets/images/cursor/dark/cursor_dark_f1.png") 8 8, auto;}
+  10% {cursor: url("assets/images/cursor/dark/cursor_dark_f2.png") 9 9, auto;}
+  15% {cursor: url("assets/images/cursor/dark/cursor_dark_f3.png") 10 10, auto;}
+  20% {cursor: url("assets/images/cursor/dark/cursor_dark_f4.png") 11 11, auto;}
+  25% {cursor: url("assets/images/cursor/dark/cursor_dark_f5.png") 12 12, auto;}
+  30% {cursor: url("assets/images/cursor/dark/cursor_dark_f6.png") 13 13, auto;}
+  35% {cursor: url("assets/images/cursor/dark/cursor_dark_f7.png") 14 14, auto;}
+  40% {cursor: url("assets/images/cursor/dark/cursor_dark_f8.png") 15 15, auto;}
+  45% {cursor: url("assets/images/cursor/dark/cursor_dark_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/dark/cursor_dark_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/dark/cursor_dark_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/dark/cursor_dark_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/dark/cursor_dark_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/dark/cursor_dark_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/dark/cursor_dark_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/dark/cursor_dark_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/dark/cursor_dark_f17.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/dark/cursor_dark_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
+} 
+
+@keyframes cursor-dark {
+  0% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
+  5% {cursor: url("assets/images/cursor/dark/cursor_dark_f1.png") 8 8, auto;}
+  10% {cursor: url("assets/images/cursor/dark/cursor_dark_f2.png") 9 9, auto;}
+  15% {cursor: url("assets/images/cursor/dark/cursor_dark_f3.png") 10 10, auto;}
+  20% {cursor: url("assets/images/cursor/dark/cursor_dark_f4.png") 11 11, auto;}
+  25% {cursor: url("assets/images/cursor/dark/cursor_dark_f5.png") 12 12, auto;}
+  30% {cursor: url("assets/images/cursor/dark/cursor_dark_f6.png") 13 13, auto;}
+  35% {cursor: url("assets/images/cursor/dark/cursor_dark_f7.png") 14 14, auto;}
+  40% {cursor: url("assets/images/cursor/dark/cursor_dark_f8.png") 15 15, auto;}
+  45% {cursor: url("assets/images/cursor/dark/cursor_dark_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/dark/cursor_dark_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/dark/cursor_dark_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/dark/cursor_dark_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/dark/cursor_dark_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/dark/cursor_dark_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/dark/cursor_dark_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/dark/cursor_dark_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/dark/cursor_dark_f17.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/dark/cursor_dark_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
 }
 
 /* --------------------------------- */
@@ -439,7 +567,14 @@ main {
   text-decoration: none;
   background-color: var(--bg-color-primary);
   color: var(--important);
-  cursor: pointer;
+}
+
+body.light .menu-btn {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .menu-btn {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 .menu-btn,
@@ -450,6 +585,16 @@ main {
 
 .menu-btn:hover {
   background-color: var(--bg-color-secondary);
+}
+
+body.light .menu-btn:hover {
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .menu-btn:hover {
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
 }
 
 /* Go to top button */
@@ -496,6 +641,25 @@ main {
   font-size: var(--h2);
   text-decoration: none;
   color: #fff;
+  
+}
+
+body.light .nav-item a {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .nav-item a {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
+body.light .nav-item a:hover{
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .nav-item a:hover{
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
 }
 
 .nav-item a::after {
@@ -534,7 +698,7 @@ main {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffc400;
+  background: var(--scrollbar-secondary);
 }
 
 /* --------------------------------- */
@@ -556,8 +720,8 @@ body.dark .header {
 }
 
 body.light .header {
-  background-image: linear-gradient(#ffffffa2, #ffffffe6),
-    url("assets/images/hero-bg-light.webp");
+  background-image: linear-gradient(#ffffff8a, #ffffff2a,#ffffff),
+    url("assets/images/me_bg2.webp");
 }
 
 .header-textbox {
@@ -566,12 +730,17 @@ body.light .header {
   transform: translateY(-50%);
 }
 
+.header-title {
+  color: var(--title-color);
+}
+
 .header-text {
   font-size: var(--text-large);
   font-weight: 400;
   max-inline-size: 745px;
   margin-block-start: var(--gutter-micro);
   margin-block-end: var(--gutter-medium);
+  color: var(--title-color);
 }
 
 @media (max-width: 1200px) {
@@ -636,7 +805,17 @@ body.light .header {
   border-radius: 50%;
   border: 2px solid;
   border-color: var(--important);
+  box-shadow: 0px 0px 10px 1px var(--box-shadow);
 }
+
+body.light #profilePicture {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark #profilePicture {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
 
 @media (max-width: 1045px) {
   .about-area {
@@ -644,15 +823,8 @@ body.light .header {
   }
 
   #profilePicture{
-    display: block;
-    margin: auto;
-    width: auto;
-    height: auto;
     max-width: 50%;
-    max-height: auto;
     border-radius: 50%;
-    border: 2px solid;
-    border-color: var(--important);
   }
 
   .about-text {
@@ -684,7 +856,7 @@ body.light .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 0px 10px 1px rgba(255, 145, 0, 0.316);
+  box-shadow: 0px 0px 10px 1px var(--box-shadow);
 }
 
 .project-card .date{
@@ -861,6 +1033,15 @@ body.light .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
+  outline: 1px solid var(--box-shadow);
+  outline-offset: 1rem;
+}
+
+.work-box:hover {
+  outline: 4px solid var(--important);
+  transform: scale(1.02);
+  transition: .2s linear;
 }
 
 @media (max-width: 1045px) {
@@ -945,14 +1126,38 @@ body.dark .work-links img {
   filter: invert(1);
 }
 
+body.light .work-links a,
+body.light .work-links img {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .work-links a,
+body.dark .work-links img {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
+body.light .work-links a,
+body.light .work-links img:hover {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .work-links a,
+body.dark .work-links img:hover {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 16 16, pointer;
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
+}
+
 /* Github icon */
 
-.work-links > a:last-child {
+.work-links > a > img {
   transition: 0.3s transform ease-in;
 }
 
-.work-links > a:last-child:hover,
-.work-links > a:last-child:focus {
+.work-links > a > img:hover,
+.work-links > a > img:focus {
   transform: scale(1.1);
 }
 
@@ -1232,8 +1437,26 @@ body.light .signatures {
   transition: 225ms ease-in opacity;
 }
 
+body.light .footer-link a {
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .footer-link a {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
 .footer-link a:hover {
   opacity: 1;
+}
+
+body.light .footer-link a:hover{
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .footer-link a:hover{
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
 }
 
 body.dark .footer-link img {
@@ -1270,9 +1493,40 @@ body.dark .footer-link img {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+body.light
+.theme-switch,
+body.light
 .theme-switch > span,
+body.light
 .theme-switch > input {
-  cursor: pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
+}
+
+
+body.dark
+.theme-switch,
+body.dark
+.theme-switch > span,
+body.dark
+.theme-switch > input {
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
+}
+
+body.light
+.theme-switch > span:hover,
+body.light
+.theme-switch > input:hover {
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark
+.theme-switch > span:hover,
+body.dark
+.theme-switch > input:hover{
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
 }
 
 .theme-switch span {
