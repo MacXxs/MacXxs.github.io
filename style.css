@@ -62,7 +62,8 @@ body.dark {
   --card-uni: #ffffffb6;
   --card-location: #ff990076;
   --title-color: #ffffff;
-  --box-shadow: #ff910051
+  --box-shadow: #Ff910051;
+  --scrollbar-secondary: #ffc400;
 }
 
 body.light {
@@ -76,7 +77,8 @@ body.light {
   --gradient-border: linear-gradient(to left bottom, #000000c6, #0e0d0d00);
   --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
   --title-color: #000000;
-  --box-shadow: #ff910051
+  --box-shadow: #17171751;
+  --scrollbar-secondary: #1a1a1abd;
 }
 
 *,
@@ -385,7 +387,7 @@ body.light .link::after {
 }
 
 .divider {
-  border-color: #fa8e005b;
+  border-color: var(--box-shadow)
 }
 
 /* --------------------------------- */
@@ -538,7 +540,7 @@ main {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffc400;
+  background: var(--scrollbar-secondary);
 }
 
 /* --------------------------------- */
@@ -560,8 +562,8 @@ body.dark .header {
 }
 
 body.light .header {
-  background-image: linear-gradient(#ffffff9c, #ffffff00,#ffffff9c),
-    url("assets/images/me_bg.webp");
+  background-image: linear-gradient(#ffffff8a, #ffffff2a,#ffffff),
+    url("assets/images/me_bg2.webp");
 }
 
 .header-textbox {
