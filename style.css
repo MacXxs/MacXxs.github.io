@@ -1126,14 +1126,38 @@ body.dark .work-links img {
   filter: invert(1);
 }
 
+body.light .work-links a,
+body.light .work-links img {
+  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+}
+
+body.dark .work-links a,
+body.dark .work-links img {
+  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+}
+
+body.light .work-links a,
+body.light .work-links img:hover {
+  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  -webkit-animation: cursor-light 750ms infinite;
+  animation: cursor-light 750ms infinite;
+}
+
+body.dark .work-links a,
+body.dark .work-links img:hover {
+  cursor: url('assets/images/cursor/cursor_dark_default.png') 16 16, pointer;
+  -webkit-animation: cursor-dark 750ms infinite;
+  animation: cursor-dark 750ms infinite;
+}
+
 /* Github icon */
 
-.work-links > a:last-child {
+.work-links > a > img {
   transition: 0.3s transform ease-in;
 }
 
-.work-links > a:last-child:hover,
-.work-links > a:last-child:focus {
+.work-links > a > img:hover,
+.work-links > a > img:focus {
   transform: scale(1.1);
 }
 
