@@ -81,11 +81,7 @@ body.light {
   --scrollbar-secondary: #1a1a1abd;
 }
 
-input,
-textarea,
-button,
-select,
-a {
+* {
     -webkit-tap-highlight-color: transparent;
 }
 
