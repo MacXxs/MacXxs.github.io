@@ -299,21 +299,21 @@ h3,
 }
 
 body.light .btn{
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark .btn{
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 body.light .btn:hover {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
   -webkit-animation: cursor-light 750ms infinite;
   animation: cursor-light 750ms infinite;
 }
 
 body.dark .btn:hover {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
   -webkit-animation: cursor-dark 750ms infinite;
   animation: cursor-dark 750ms infinite;
 }
@@ -410,106 +410,106 @@ body.light .link::after {
 }
 
 body.light {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 
 /* Cursor animations */
 
 @-webkit-keyframes cursor-light {
-  0% {cursor: url("assets/images/cursor/cursor_light_default.png") 16 16, auto;}
-  5% {cursor: url("assets/images/cursor/cursor_light_f1.png") 16 16, auto;}
-  10% {cursor: url("assets/images/cursor/cursor_light_f2.png") 16 16, auto;}
-  15% {cursor: url("assets/images/cursor/cursor_light_f3.png") 16 16, auto;}
-  20% {cursor: url("assets/images/cursor/cursor_light_f4.png") 16 16, auto;}
-  25% {cursor: url("assets/images/cursor/cursor_light_f5.png") 16 16, auto;}
-  30% {cursor: url("assets/images/cursor/cursor_light_f6.png") 16 16, auto;}
-  35% {cursor: url("assets/images/cursor/cursor_light_f7.png") 16 16, auto;}
-  40% {cursor: url("assets/images/cursor/cursor_light_f8.png") 16 16, auto;}
-  45% {cursor: url("assets/images/cursor/cursor_light_f9.png") 16 16, auto;}
-  50% {cursor: url("assets/images/cursor/cursor_light_f10.png") 16 16, auto;}
-  55% {cursor: url("assets/images/cursor/cursor_light_f11.png") 16 16, auto;}
-  60% {cursor: url("assets/images/cursor/cursor_light_f12.png") 16 16, auto;}
-  65% {cursor: url("assets/images/cursor/cursor_light_f13.png") 16 16, auto;}
-  70% {cursor: url("assets/images/cursor/cursor_light_f14.png") 16 16, auto;}
-  75% {cursor: url("assets/images/cursor/cursor_light_f15.png") 16 16, auto;}
-  80% {cursor: url("assets/images/cursor/cursor_light_f16.png") 16 16, auto;}
-  90% {cursor: url("assets/images/cursor/cursor_light_f18.png") 16 16, auto;}
-  95% {cursor: url("assets/images/cursor/cursor_light_hover.png") 16 16, auto;}
-  100% {cursor: url("assets/images/cursor/cursor_light_default.png") 16 16, auto;}
+  0% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+  5% {cursor: url("assets/images/cursor/light/cursor_light_f1.png") 16 16, auto;}
+  10% {cursor: url("assets/images/cursor/light/cursor_light_f2.png") 16 16, auto;}
+  15% {cursor: url("assets/images/cursor/light/cursor_light_f3.png") 16 16, auto;}
+  20% {cursor: url("assets/images/cursor/light/cursor_light_f4.png") 16 16, auto;}
+  25% {cursor: url("assets/images/cursor/light/cursor_light_f5.png") 16 16, auto;}
+  30% {cursor: url("assets/images/cursor/light/cursor_light_f6.png") 16 16, auto;}
+  35% {cursor: url("assets/images/cursor/light/cursor_light_f7.png") 16 16, auto;}
+  40% {cursor: url("assets/images/cursor/light/cursor_light_f8.png") 16 16, auto;}
+  45% {cursor: url("assets/images/cursor/light/cursor_light_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/light/cursor_light_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/light/cursor_light_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/light/cursor_light_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/light/cursor_light_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/light/cursor_light_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/light/cursor_light_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/light/cursor_light_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/light/cursor_light_f18.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/light/cursor_light_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
 } 
 
 @keyframes cursor-light {
-  0% {cursor: url("assets/images/cursor/cursor_light_default.png") 16 16, auto;}
-  5% {cursor: url("assets/images/cursor/cursor_light_f1.png") 16 16, auto;}
-  10% {cursor: url("assets/images/cursor/cursor_light_f2.png") 16 16, auto;}
-  15% {cursor: url("assets/images/cursor/cursor_light_f3.png") 16 16, auto;}
-  20% {cursor: url("assets/images/cursor/cursor_light_f4.png") 16 16, auto;}
-  25% {cursor: url("assets/images/cursor/cursor_light_f5.png") 16 16, auto;}
-  30% {cursor: url("assets/images/cursor/cursor_light_f6.png") 16 16, auto;}
-  35% {cursor: url("assets/images/cursor/cursor_light_f7.png") 16 16, auto;}
-  40% {cursor: url("assets/images/cursor/cursor_light_f8.png") 16 16, auto;}
-  45% {cursor: url("assets/images/cursor/cursor_light_f9.png") 16 16, auto;}
-  50% {cursor: url("assets/images/cursor/cursor_light_f10.png") 16 16, auto;}
-  55% {cursor: url("assets/images/cursor/cursor_light_f11.png") 16 16, auto;}
-  60% {cursor: url("assets/images/cursor/cursor_light_f12.png") 16 16, auto;}
-  65% {cursor: url("assets/images/cursor/cursor_light_f13.png") 16 16, auto;}
-  70% {cursor: url("assets/images/cursor/cursor_light_f14.png") 16 16, auto;}
-  75% {cursor: url("assets/images/cursor/cursor_light_f15.png") 16 16, auto;}
-  80% {cursor: url("assets/images/cursor/cursor_light_f16.png") 16 16, auto;}
-  90% {cursor: url("assets/images/cursor/cursor_light_f18.png") 16 16, auto;}
-  95% {cursor: url("assets/images/cursor/cursor_light_hover.png") 16 16, auto;}
-  100% {cursor: url("assets/images/cursor/cursor_light_default.png") 16 16, auto;}
+  0% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
+  5% {cursor: url("assets/images/cursor/light/cursor_light_f1.png") 16 16, auto;}
+  10% {cursor: url("assets/images/cursor/light/cursor_light_f2.png") 16 16, auto;}
+  15% {cursor: url("assets/images/cursor/light/cursor_light_f3.png") 16 16, auto;}
+  20% {cursor: url("assets/images/cursor/light/cursor_light_f4.png") 16 16, auto;}
+  25% {cursor: url("assets/images/cursor/light/cursor_light_f5.png") 16 16, auto;}
+  30% {cursor: url("assets/images/cursor/light/cursor_light_f6.png") 16 16, auto;}
+  35% {cursor: url("assets/images/cursor/light/cursor_light_f7.png") 16 16, auto;}
+  40% {cursor: url("assets/images/cursor/light/cursor_light_f8.png") 16 16, auto;}
+  45% {cursor: url("assets/images/cursor/light/cursor_light_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/light/cursor_light_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/light/cursor_light_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/light/cursor_light_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/light/cursor_light_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/light/cursor_light_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/light/cursor_light_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/light/cursor_light_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/light/cursor_light_f18.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/light/cursor_light_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/light/cursor_light_default.png") 16 16, auto;}
 }
 
 @-webkit-keyframes cursor-dark {
-  0% {cursor: url("assets/images/cursor/cursor_dark_default.png") 8 8, auto;}
-  5% {cursor: url("assets/images/cursor/cursor_dark_f1.png") 8 8, auto;}
-  10% {cursor: url("assets/images/cursor/cursor_dark_f2.png") 9 9, auto;}
-  15% {cursor: url("assets/images/cursor/cursor_dark_f3.png") 10 10, auto;}
-  20% {cursor: url("assets/images/cursor/cursor_dark_f4.png") 11 11, auto;}
-  25% {cursor: url("assets/images/cursor/cursor_dark_f5.png") 12 12, auto;}
-  30% {cursor: url("assets/images/cursor/cursor_dark_f6.png") 13 13, auto;}
-  35% {cursor: url("assets/images/cursor/cursor_dark_f7.png") 14 14, auto;}
-  40% {cursor: url("assets/images/cursor/cursor_dark_f8.png") 15 15, auto;}
-  45% {cursor: url("assets/images/cursor/cursor_dark_f9.png") 16 16, auto;}
-  50% {cursor: url("assets/images/cursor/cursor_dark_f10.png") 16 16, auto;}
-  55% {cursor: url("assets/images/cursor/cursor_dark_f11.png") 16 16, auto;}
-  60% {cursor: url("assets/images/cursor/cursor_dark_f12.png") 16 16, auto;}
-  65% {cursor: url("assets/images/cursor/cursor_dark_f13.png") 16 16, auto;}
-  70% {cursor: url("assets/images/cursor/cursor_dark_f14.png") 16 16, auto;}
-  75% {cursor: url("assets/images/cursor/cursor_dark_f15.png") 16 16, auto;}
-  80% {cursor: url("assets/images/cursor/cursor_dark_f16.png") 16 16, auto;}
-  90% {cursor: url("assets/images/cursor/cursor_dark_f17.png") 16 16, auto;}
-  95% {cursor: url("assets/images/cursor/cursor_dark_hover.png") 16 16, auto;}
-  100% {cursor: url("assets/images/cursor/cursor_dark_default.png") 8 8, auto;}
+  0% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
+  5% {cursor: url("assets/images/cursor/dark/cursor_dark_f1.png") 8 8, auto;}
+  10% {cursor: url("assets/images/cursor/dark/cursor_dark_f2.png") 9 9, auto;}
+  15% {cursor: url("assets/images/cursor/dark/cursor_dark_f3.png") 10 10, auto;}
+  20% {cursor: url("assets/images/cursor/dark/cursor_dark_f4.png") 11 11, auto;}
+  25% {cursor: url("assets/images/cursor/dark/cursor_dark_f5.png") 12 12, auto;}
+  30% {cursor: url("assets/images/cursor/dark/cursor_dark_f6.png") 13 13, auto;}
+  35% {cursor: url("assets/images/cursor/dark/cursor_dark_f7.png") 14 14, auto;}
+  40% {cursor: url("assets/images/cursor/dark/cursor_dark_f8.png") 15 15, auto;}
+  45% {cursor: url("assets/images/cursor/dark/cursor_dark_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/dark/cursor_dark_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/dark/cursor_dark_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/dark/cursor_dark_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/dark/cursor_dark_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/dark/cursor_dark_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/dark/cursor_dark_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/dark/cursor_dark_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/dark/cursor_dark_f17.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/dark/cursor_dark_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
 } 
 
 @keyframes cursor-dark {
-  0% {cursor: url("assets/images/cursor/cursor_dark_default.png") 8 8, auto;}
-  5% {cursor: url("assets/images/cursor/cursor_dark_f1.png") 8 8, auto;}
-  10% {cursor: url("assets/images/cursor/cursor_dark_f2.png") 9 9, auto;}
-  15% {cursor: url("assets/images/cursor/cursor_dark_f3.png") 10 10, auto;}
-  20% {cursor: url("assets/images/cursor/cursor_dark_f4.png") 11 11, auto;}
-  25% {cursor: url("assets/images/cursor/cursor_dark_f5.png") 12 12, auto;}
-  30% {cursor: url("assets/images/cursor/cursor_dark_f6.png") 13 13, auto;}
-  35% {cursor: url("assets/images/cursor/cursor_dark_f7.png") 14 14, auto;}
-  40% {cursor: url("assets/images/cursor/cursor_dark_f8.png") 15 15, auto;}
-  45% {cursor: url("assets/images/cursor/cursor_dark_f9.png") 16 16, auto;}
-  50% {cursor: url("assets/images/cursor/cursor_dark_f10.png") 16 16, auto;}
-  55% {cursor: url("assets/images/cursor/cursor_dark_f11.png") 16 16, auto;}
-  60% {cursor: url("assets/images/cursor/cursor_dark_f12.png") 16 16, auto;}
-  65% {cursor: url("assets/images/cursor/cursor_dark_f13.png") 16 16, auto;}
-  70% {cursor: url("assets/images/cursor/cursor_dark_f14.png") 16 16, auto;}
-  75% {cursor: url("assets/images/cursor/cursor_dark_f15.png") 16 16, auto;}
-  80% {cursor: url("assets/images/cursor/cursor_dark_f16.png") 16 16, auto;}
-  90% {cursor: url("assets/images/cursor/cursor_dark_f17.png") 16 16, auto;}
-  95% {cursor: url("assets/images/cursor/cursor_dark_hover.png") 16 16, auto;}
-  100% {cursor: url("assets/images/cursor/cursor_dark_default.png") 8 8, auto;}
+  0% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
+  5% {cursor: url("assets/images/cursor/dark/cursor_dark_f1.png") 8 8, auto;}
+  10% {cursor: url("assets/images/cursor/dark/cursor_dark_f2.png") 9 9, auto;}
+  15% {cursor: url("assets/images/cursor/dark/cursor_dark_f3.png") 10 10, auto;}
+  20% {cursor: url("assets/images/cursor/dark/cursor_dark_f4.png") 11 11, auto;}
+  25% {cursor: url("assets/images/cursor/dark/cursor_dark_f5.png") 12 12, auto;}
+  30% {cursor: url("assets/images/cursor/dark/cursor_dark_f6.png") 13 13, auto;}
+  35% {cursor: url("assets/images/cursor/dark/cursor_dark_f7.png") 14 14, auto;}
+  40% {cursor: url("assets/images/cursor/dark/cursor_dark_f8.png") 15 15, auto;}
+  45% {cursor: url("assets/images/cursor/dark/cursor_dark_f9.png") 16 16, auto;}
+  50% {cursor: url("assets/images/cursor/dark/cursor_dark_f10.png") 16 16, auto;}
+  55% {cursor: url("assets/images/cursor/dark/cursor_dark_f11.png") 16 16, auto;}
+  60% {cursor: url("assets/images/cursor/dark/cursor_dark_f12.png") 16 16, auto;}
+  65% {cursor: url("assets/images/cursor/dark/cursor_dark_f13.png") 16 16, auto;}
+  70% {cursor: url("assets/images/cursor/dark/cursor_dark_f14.png") 16 16, auto;}
+  75% {cursor: url("assets/images/cursor/dark/cursor_dark_f15.png") 16 16, auto;}
+  80% {cursor: url("assets/images/cursor/dark/cursor_dark_f16.png") 16 16, auto;}
+  90% {cursor: url("assets/images/cursor/dark/cursor_dark_f17.png") 16 16, auto;}
+  95% {cursor: url("assets/images/cursor/dark/cursor_dark_hover.png") 16 16, auto;}
+  100% {cursor: url("assets/images/cursor/dark/cursor_dark_default.png") 8 8, auto;}
 }
 
 /* --------------------------------- */
@@ -570,11 +570,11 @@ main {
 }
 
 body.light .menu-btn {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark .menu-btn {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 .menu-btn,
@@ -645,11 +645,11 @@ body.dark .menu-btn:hover {
 }
 
 body.light .nav-item a {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark .nav-item a {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 body.light .nav-item a:hover{
@@ -809,11 +809,11 @@ body.light .header {
 }
 
 body.light #profilePicture {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark #profilePicture {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 
@@ -1128,24 +1128,24 @@ body.dark .work-links img {
 
 body.light .work-links a,
 body.light .work-links img {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark .work-links a,
 body.dark .work-links img {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 body.light .work-links a,
 body.light .work-links img:hover {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
   -webkit-animation: cursor-light 750ms infinite;
   animation: cursor-light 750ms infinite;
 }
 
 body.dark .work-links a,
 body.dark .work-links img:hover {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 16 16, pointer;
   -webkit-animation: cursor-dark 750ms infinite;
   animation: cursor-dark 750ms infinite;
 }
@@ -1438,11 +1438,11 @@ body.light .signatures {
 }
 
 body.light .footer-link a {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 body.dark .footer-link a {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 .footer-link a:hover {
@@ -1500,7 +1500,7 @@ body.light
 .theme-switch > span,
 body.light
 .theme-switch > input {
-  cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
+  cursor: url('assets/images/cursor/light/cursor_light_default.png') 16 16, pointer;
 }
 
 
@@ -1510,7 +1510,7 @@ body.dark
 .theme-switch > span,
 body.dark
 .theme-switch > input {
-  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+  cursor: url('assets/images/cursor/dark/cursor_dark_default.png') 8 8, pointer;
 }
 
 body.light
