@@ -806,8 +806,16 @@ body.light .header {
   border: 2px solid;
   border-color: var(--important);
   box-shadow: 0px 0px 10px 1px var(--box-shadow);
+}
+
+body.light #profilePicture {
   cursor: url('assets/images/cursor/cursor_light_default.png') 16 16, pointer;
 }
+
+body.dark #profilePicture {
+  cursor: url('assets/images/cursor/cursor_dark_default.png') 8 8, pointer;
+}
+
 
 @media (max-width: 1045px) {
   .about-area {
