@@ -81,6 +81,7 @@ body.light {
   --scrollbar-secondary: #1a1a1abd;
 }
 
+/* No flashing on phone tapping */
 * {
     -webkit-tap-highlight-color: transparent;
 }
